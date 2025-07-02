@@ -1,0 +1,13 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem 2rem;
+}
+h1 { text-align: center; color: #38bdf8; }
+input, button { padding: 10px; font-size: 14px; margin: 5px; }
+button { background: #38bdf8; color: black; border: none; border-radius: 6px; cursor: pointer; }
+#dashboard, #suggestions { background: #1e293b; margin-top: 10px; padding: 1rem; border-radius: 8px; }
+#suggestions div { cursor: pointer; padding: 5px; }
+#suggestions div:hover { background: #334155; }

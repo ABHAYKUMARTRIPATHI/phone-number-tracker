@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phone Number Tracker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Phone Number Intelligence Tracker</h1>
+  <input id="vtApiKey" placeholder="Enter API Key" />
+  <button onclick="saveApiKey()">Save Key</button>
+  <br/>
+  <input id="numberInput" placeholder="Enter Number" oninput="suggestNumbers()" />
+  <div id="suggestions"></div>
+  <button onclick="lookupNumber()">Lookup</button>
+  <div id="dashboard" style="display:none;">
+    <div id="report-output"></div>
+    <div id="face-sim"></div>
+    <div id="geoip"></div>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
